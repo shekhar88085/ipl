@@ -1,5 +1,6 @@
 package io.edar.Controller;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 //import org.springframework.data.domain.PageRequest;
 //import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,6 +12,7 @@ import io.edar.repository.MatchRepository;
 import io.edar.repository.TeamRepository;
 
 @RestController
+@CrossOrigin
 public class TeamController {
  
 	private TeamRepository teamRepository;
